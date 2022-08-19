@@ -1,7 +1,12 @@
 import "./App.css";
+import Intro from "./intro_view/Intro.js";
 
 function App() {
-  return <>hi</>;
+  return (
+    <>
+    <Intro/>
+    </>
+  )
 }
 
 export default App;
