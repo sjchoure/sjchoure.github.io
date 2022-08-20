@@ -28,19 +28,24 @@ const ProfileDetails = () => {
               item
               style={{
                 width: "100%",
-                height: "280px",
+                
                 backgroundImage: `url(https://i.pinimg.com/originals/10/83/da/1083da23b62f2b5e91f4be2bbd26f964.gif)`,
                 backgroundSize: "cover",
                 backgroundPosition: "bottom",
               }}
               sx={{
+                height: {
+                    xs: "35vh",
+                    sm: "60vh",
+                    md: "50vh"
+                },
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "flex-end",
               }}
             >
-              <Avatar sx={{ width: 100, height: 100 }} />
+              <Avatar sx={{ width: "15vh", height: "15vh" }} />
               <Box
                 mt={1}
                 mb={1}
@@ -49,20 +54,21 @@ const ProfileDetails = () => {
                 sx={{
                   fontFamily: "Lucida Grande",
                   color: "white",
-                  fontSize: 19,
-                }}
-                style={{
-                  background: "rgba(255, 255, 255, 0.2)",
+                  fontSize: "1.5rem",
+                  background: "rgba(150, 150, 150, 0.2)",
                   borderRadius: "20px",
                   boxShadow: "0 4px 30px rgba(0, 0, 0, 0.3)",
                   backdropFilter: "blur(20px)",
+                }}
+                style={{
+                  
                 }}
               >
                 Sourabh Jaywant Choure
               </Box>
             </Grid>
             <Grid item p={2}>
-              <Box sx={{ fontWeight: 700, fontSize: 22 }}>Intro</Box>
+              <Box sx={{ fontWeight: 700, fontSize: "1.6rem" }}>Intro</Box>
               <Stack
                 direction="row"
                 alignItems="center"

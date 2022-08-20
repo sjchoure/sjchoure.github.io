@@ -3,8 +3,9 @@ import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import CssBaseline from "@mui/material/CssBaseline";
-import ProfileDetails from '././Profile_Details';
-import AboutMe from './About_Me';
+import ProfileDetails from "././Profile_Details";
+import AboutMe from "./About_Me";
+import Skills from "./Skills";
 
 const Intro = () => {
   return (
@@ -24,10 +25,17 @@ const Intro = () => {
             style={{ minHeight: "100vh" }}
           >
             <Grid item xs={12} sm={4}>
-              <ProfileDetails/>
+              <ProfileDetails />
             </Grid>
             <Grid item xs={12} sm={8}>
-              <AboutMe/>
+              <Grid container direction="row" rowSpacing={2}>
+                <Grid item xs={12}>
+                  <AboutMe />
+                </Grid>
+                <Grid item xs={12}>
+                  <Skills />
+                </Grid>
+              </Grid>
             </Grid>
           </Grid>
         </Box>
