@@ -3,18 +3,18 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import DescriptionIcon from '@mui/icons-material/Description';
+import DescriptionIcon from "@mui/icons-material/Description";
 
 const AboutMe = () => {
   return (
     <Card>
       <CardContent sx={{ textAlign: "justify" }}>
-        <Box sx={{ fontWeight: 700, fontSize: "1.6rem" }}>About Me</Box>
-        <Box sx={{ fontStyle: "italic", fontWeight: 300 }}>
+        <Box mb={"0.1vh"} sx={{ fontWeight: 700, fontSize: "3.5vh" }}>About Me</Box>
+        <Box mb={"0.1vh"} sx={{ fontStyle: "italic", fontWeight: 300, fontSize: "2.5vh" }}>
           Fun Fact: I love pushing the capabilities of the software beyond
           imagination with magic!
         </Box>
-        <Box>
+        <Box mb={"0.1vh"} sx={{fontSize: "0.9rem" }}>
           Computer Science major pursing master's of science degree from The
           University of Texas at Dallas. I have work experiences from building
           softwares from scratch for small startups to optimizing workflows for

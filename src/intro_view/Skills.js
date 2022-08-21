@@ -10,8 +10,12 @@ const Skills = () => {
       <CardContent>
         <Grid container direction="column" justify="center" rowSpacing={2}>
           <Grid item>
-            <Box sx={{ fontWeight: 700, fontSize: "1.6rem" }}>Skill Sets</Box>
-            <Box sx={{}}>Programming Languages</Box>
+            <Box mb={"0.1vh"} sx={{ fontWeight: 700, fontSize: "1.3rem" }}>
+              Skill Sets
+            </Box>
+            <Box mb={"0.1vh"} sx={{ fontSize: "0.9rem" }}>
+              Programming Languages
+            </Box>
             <img
               alt="C"
               height="50px"
@@ -60,7 +64,9 @@ const Skills = () => {
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
             />
 
-            <Box sx={{}}>Framework and Tools</Box>
+            <Box mb={"0.1vh"} sx={{ fontSize: "0.9rem" }}>
+              Framework and Tools
+            </Box>
 
             <img
               alt="react"
@@ -98,7 +104,9 @@ const Skills = () => {
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
             />
 
-            <Box sx={{}}>Cloud Platfdorm</Box>
+            <Box mb={"0.1vh"} sx={{ fontSize: "0.9rem" }}>
+              Cloud Platfdorm
+            </Box>
             <img
               alt="mysql"
               height="50px"

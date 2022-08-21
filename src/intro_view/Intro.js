@@ -24,7 +24,7 @@ const Intro = () => {
             alignItems="center"
             style={{ minHeight: "100vh" }}
           >
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} sm={4} md={4}>
               <ProfileDetails />
             </Grid>
             <Grid item xs={12} sm={8}>
