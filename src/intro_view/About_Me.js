@@ -20,7 +20,7 @@ const AboutMe = () => {
           softwares from scratch for small startups to optimizing workflows for
           big-tech companies. My concentration is mostly in Infrastructure and
           Distributed Systems and open to explore any other fields as well. Feel
-          free to request for more details by contacting me.
+          free to request for more details.
         </Box>
         <Button variant="outlined" startIcon={<DescriptionIcon />}>
           Resume
