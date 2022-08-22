@@ -2,7 +2,6 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
-import CssBaseline from "@mui/material/CssBaseline";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
@@ -21,94 +20,103 @@ const WorkEXP = () => {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("md"));
   return (
-    <>
-      <CssBaseline />
-      <Container
-        maxWidth={false}
-        disableGutters={true}
-        sx={{ bgcolor: "#d9d9d9" }}
-      >
-        <Box sx={{ bgcolor: "#E1E1E1" }}>
-          <Grid
-            container
-            alignItems="center"
-            justifyContent="center"
-            style={{ minHeight: "100vh" }}
-          >
-            <Grid item sm={12} md={10} lg={10} sx={{ width: "100vw" }}>
-              <Timeline
-                position={matches ? "alternate" : "right"}
-                sx={{ justifyContent: "center" }}
-              >
-                <TimelineItem>
-                  <TimelineSeparator>
-                    <TimelineConnector />
-                    <TimelineDot>
-                      <FastfoodIcon />
-                    </TimelineDot>
-                    <TimelineConnector />
-                  </TimelineSeparator>
-                  <TimelineContent
-                    sx={{ py: "12px", px: 2, flex: { lg: "1", md: "1", xs: "100%"} }}
-                  >
-                    <Card>
-                      <CardContent>
-                        <Typography variant="h6" component="span">
-                          Meta (Facebook)
-                        </Typography>
-                        <Typography>...</Typography>
-                      </CardContent>
-                    </Card>
-                  </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                  <TimelineSeparator>
-                    <TimelineConnector />
-                    <TimelineDot color="primary">
-                      <LaptopMacIcon />
-                    </TimelineDot>
-                    <TimelineConnector />
-                  </TimelineSeparator>
-                  <TimelineContent
-                    sx={{ py: "12px", px: 2, flex: { lg: "1", md: "1", xs: "100%"} }}
-                  >
-                    <Card>
-                      <CardContent>
-                        <Typography variant="h6" component="span">
-                          Meta (Facebook)
-                        </Typography>
-                        <Typography>...</Typography>
-                      </CardContent>
-                    </Card>
-                  </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                  <TimelineSeparator>
-                    <TimelineConnector />
-                    <TimelineDot color="primary" variant="outlined">
-                      <LaptopMacIcon />
-                    </TimelineDot>
-                    <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-                  </TimelineSeparator>
-                  <TimelineContent
-                    sx={{ py: "12px", px: 2, flex: { lg: "1", md: "1", xs: "100%"} }}
-                  >
-                    <Card>
-                      <CardContent>
-                        <Typography variant="h6" component="span">
-                          Meta (Facebook)
-                        </Typography>
-                        <Typography>...</Typography>
-                      </CardContent>
-                    </Card>
-                  </TimelineContent>
-                </TimelineItem>
-              </Timeline>
-            </Grid>
+    <Container
+      maxWidth={false}
+      disableGutters={true}
+      sx={{ bgcolor: "#d9d9d9" }}
+    >
+      <Box sx={{ bgcolor: "#E1E1E1" }}>
+        <Grid
+          container
+          alignItems="center"
+          justifyContent="center"
+          style={{ minHeight: "100vh" }}
+        >
+          <Grid item sm={12} md={10} lg={10} sx={{ width: "100vw" }}>
+            <Timeline
+              position={matches ? "alternate" : "right"}
+              sx={{ justifyContent: "center" }}
+            >
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineConnector />
+                  <TimelineDot>
+                    <FastfoodIcon />
+                  </TimelineDot>
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent
+                  sx={{
+                    py: "12px",
+                    px: 2,
+                    flex: { lg: "1", md: "1", xs: "100%" },
+                  }}
+                >
+                  <Card>
+                    <CardContent>
+                      <Typography variant="h6" component="span">
+                        Meta (Facebook)
+                      </Typography>
+                      <Typography>...</Typography>
+                    </CardContent>
+                  </Card>
+                </TimelineContent>
+              </TimelineItem>
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineConnector />
+                  <TimelineDot color="primary">
+                    <LaptopMacIcon />
+                  </TimelineDot>
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent
+                  sx={{
+                    py: "12px",
+                    px: 2,
+                    flex: { lg: "1", md: "1", xs: "100%" },
+                  }}
+                >
+                  <Card>
+                    <CardContent>
+                      <Typography variant="h6" component="span">
+                        Meta (Facebook)
+                      </Typography>
+                      <Typography>...</Typography>
+                    </CardContent>
+                  </Card>
+                </TimelineContent>
+              </TimelineItem>
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineConnector />
+                  <TimelineDot color="primary" variant="outlined">
+                    <LaptopMacIcon />
+                  </TimelineDot>
+                  <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
+                </TimelineSeparator>
+                <TimelineContent
+                  sx={{
+                    py: "12px",
+                    px: 2,
+                    flex: { lg: "1", md: "1", xs: "100%" },
+                  }}
+                >
+                  <Card>
+                    <CardContent>
+                      <Typography variant="h6" component="span">
+                        Meta (Facebook)
+                      </Typography>
+                      <Typography>...</Typography>
+                    </CardContent>
+                  </Card>
+                </TimelineContent>
+              </TimelineItem>
+            </Timeline>
           </Grid>
-        </Box>
-      </Container>
-    </>
+        </Grid>
+      </Box>
+    </Container>
   );
 };
 
