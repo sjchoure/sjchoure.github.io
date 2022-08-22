@@ -30,6 +30,11 @@ const Skills = () => {
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
               />
 
+
+            <img  alt="javascript"
+                height="55px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+          
+
               <img
                 alt="php"
                 height="55px"
@@ -65,6 +70,7 @@ const Skills = () => {
                 height="55px"
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
               />
+
             </Stack>
             <Box mb={"0.1vh"} sx={{ fontSize: "0.9rem" }}>
               Framework and Tools
