@@ -79,7 +79,7 @@ const WorkEXP = () => {
                           src="https://media-exp1.licdn.com/dms/image/C4E0BAQFdNatYGiBelg/company-logo_200_200/0/1636138753911?e=1669248000&v=beta&t=fstPmR_75BbPANOk8bhCYLZDiPTZxNyXhbL6HQ8XqHE"
                         />
                         <Stack direction="column">
-                          <Typography variant="h6">Meta (Facebook)</Typography>
+                          <Typography variant="h6"><strong>Meta (Facebook)</strong></Typography>
                           <Typography variant="subtitle1">
                             Menlo Park, CA, US
                           </Typography>
@@ -125,7 +125,7 @@ const WorkEXP = () => {
                         />
                         <Stack direction="column">
                           <Typography variant="h6">
-                            Question What's Real
+                            <strong>Question What's Real</strong>
                           </Typography>
                           <Typography variant="subtitle1">
                             Mumbai, MH, India
@@ -167,7 +167,7 @@ const WorkEXP = () => {
                           src="https://media-exp1.licdn.com/dms/image/C510BAQFaSjSKohnl-w/company-logo_200_200/0/1531927635737?e=1669248000&v=beta&t=WlToRaXDlZTcOY2xwQnoCIDx05OjbBP453mHIJV-Q5o"
                         />
                         <Stack direction="column">
-                          <Typography variant="h6">Scantech Laser</Typography>
+                          <Typography variant="h6"><strong>Scantech Laser</strong></Typography>
                           <Typography variant="subtitle1">
                             Mumbai, MH, India
                           </Typography>
