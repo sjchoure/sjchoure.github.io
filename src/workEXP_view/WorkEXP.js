@@ -27,11 +27,30 @@ const WorkEXP = () => {
     >
       <Box sx={{ bgcolor: "#E1E1E1" }}>
         <Grid
+          direction="row"
           container
-          alignItems="center"
+          alignItems="space-around"
           justifyContent="center"
           style={{ minHeight: "100vh" }}
+          rowSpacing={0}
+          gap={0}
         >
+          <Grid
+            item
+            container
+            justifyContent="center"
+            alignItems="center"
+            sm={12}
+            md={10}
+            lg={10}
+            sx={{
+              width: "100vw",
+            }}
+          >
+            <Box mb={"0.1vh"} sx={{ fontWeight: 700, fontSize: "1.3rem" }}>
+              Work Experience
+            </Box>
+          </Grid>
           <Grid item sm={12} md={10} lg={10} sx={{ width: "100vw" }}>
             <Timeline
               position={matches ? "alternate" : "right"}
