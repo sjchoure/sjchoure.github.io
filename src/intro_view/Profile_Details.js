@@ -37,7 +37,10 @@ const ProfileDetails = () => {
               backgroundPosition: "bottom",
             }}
           >
-            <Avatar sx={{ width: "15vh", height: "15vh" }} />
+            <Avatar
+              sx={{ width: "15vh", height: "15vh" }}
+              src="https://media-exp1.licdn.com/dms/image/C5603AQHJ24HyS5z4uQ/profile-displayphoto-shrink_400_400/0/1653200103453?e=1666828800&v=beta&t=-HsJbbE2zpA5u6rYW_RCwwHN04oKCUSNLWisGYOqq38"
+            />
             <Box
               mt={1}
               mb={1}
@@ -59,7 +62,7 @@ const ProfileDetails = () => {
           </Grid>
           <Grid item p={2}>
             <Box mb={"0.1vh"} sx={{ fontWeight: 700, fontSize: "1.3rem" }}>
-              Intro 
+              Intro
             </Box>
             <Stack
               direction="row"
@@ -104,7 +107,7 @@ const ProfileDetails = () => {
               justifyContent="center"
               pt={2}
             >
-              <LinkedInIcon sx={{ fontSize: 40 , color: "#0072b1"}} />
+              <LinkedInIcon sx={{ fontSize: 40, color: "#0072b1" }} />
               <GitHubIcon sx={{ fontSize: 40 }} />
               <FacebookIcon sx={{ fontSize: 40, color: "#3b5998" }} />
               <TwitterIcon sx={{ fontSize: 40, color: "#1DA1F2" }} />

@@ -23,9 +23,8 @@ const WorkEXP = () => {
     <Container
       maxWidth={false}
       disableGutters={true}
-      sx={{ bgcolor: "#d9d9d9" }}
     >
-      <Box sx={{ bgcolor: "#E1E1E1" }}>
+      <Box pb={1} sx={{ bgcolor: "#E1E1E1" }}>
         <Grid
           direction="row"
           container
