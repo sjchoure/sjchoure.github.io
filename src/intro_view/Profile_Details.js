@@ -14,6 +14,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
+
 const ProfileDetails = () => {
   return (
     <Card disableGutters={true}>
@@ -104,10 +105,10 @@ const ProfileDetails = () => {
               justifyContent="center"
               pt={2}
             >
-              <LinkedInIcon sx={{ fontSize: 35 }} />
+              <LinkedInIcon sx={{ fontSize: 35 , color: "#0072b1"}} />
               <GitHubIcon sx={{ fontSize: 35 }} />
-              <FacebookIcon sx={{ fontSize: 35 }} />
-              <TwitterIcon sx={{ fontSize: 35 }} />
+              <FacebookIcon sx={{ fontSize: 35, color: "#3b5998" }} />
+              <TwitterIcon sx={{ fontSize: 35, color: "#1DA1F2" }} />
             </Stack>
           </Grid>
         </Grid>

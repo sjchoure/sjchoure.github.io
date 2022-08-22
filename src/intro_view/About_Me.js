@@ -10,7 +10,7 @@ const AboutMe = () => {
     <Card>
       <CardContent sx={{ textAlign: "justify" }}>
         <Box mb={"0.1vh"} sx={{ fontWeight: 700, fontSize: "1.3rem" }}>About Me</Box>
-        <Box mb={"0.1vh"} sx={{ fontStyle: "italic", fontWeight: 300, fontSize: "2.5vh" }}>
+        <Box mb={"0.1vh"} sx={{ fontStyle: "italic", fontWeight: 300, fontSize: "0.9rem"  }}>
           Fun Fact: I love pushing the capabilities of the software beyond
           imagination with magic!
         </Box>

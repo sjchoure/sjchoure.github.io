@@ -16,7 +16,7 @@ const Intro = () => {
         disableGutters={true}
         sx={{ bgcolor: "#d9d9d9" }}
       >
-        <Box pl={3} pr={3} sx={{ bgcolor: "#E1E1E1", height: "100vh" }}>
+        <Box pl={3} pr={3} sx={{ bgcolor: "#E1E1E1" }}>
           <Grid
             container
             columnSpacing={2}
