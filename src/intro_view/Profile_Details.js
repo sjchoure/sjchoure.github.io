@@ -45,7 +45,7 @@ const ProfileDetails = () => {
               pl={1}
               pr={1}
               sx={{
-                fontFamily: "Lucida Grande",
+                fontFamily: "Geneva, Verdana, sans-serif",
                 color: "white",
                 fontSize: "1.5rem",
                 background: "rgba(150, 150, 150, 0.2)",
