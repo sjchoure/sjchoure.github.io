@@ -73,18 +73,25 @@ const WorkEXP = () => {
                 >
                   <Card>
                     <CardContent>
-                      <Box>
-                        <Stack direction="row" alignItems="center">
-                          <img
-                            height="55px"
-                            alt="QWR"
-                            src="https://media-exp1.licdn.com/dms/image/C4E0BAQFdNatYGiBelg/company-logo_200_200/0/1636138753911?e=1669248000&v=beta&t=fstPmR_75BbPANOk8bhCYLZDiPTZxNyXhbL6HQ8XqHE"
-                          />
-                          <Typography variant="h6" component="span">
-                            Meta (Facebook)
+                      <Stack direction="row" alignItems="flex-start">
+                        <img
+                          height="55px"
+                          alt="QWR"
+                          src="https://media-exp1.licdn.com/dms/image/C4E0BAQFdNatYGiBelg/company-logo_200_200/0/1636138753911?e=1669248000&v=beta&t=fstPmR_75BbPANOk8bhCYLZDiPTZxNyXhbL6HQ8XqHE"
+                        />
+                        <Stack direction="column">
+                          <Typography variant="h6">Meta (Facebook)</Typography>
+                          <Typography variant="subtitle1">
+                            Menlo Park, CA, US
+                          </Typography>
+                          <Typography variant="subtitle2">
+                            Software Engineering Intern
+                          </Typography>
+                          <Typography variant="caption">
+                            May'22 - Aug'22
                           </Typography>
                         </Stack>
-                      </Box>
+                      </Stack>
                       <Typography>...</Typography>
                     </CardContent>
                   </Card>
@@ -107,22 +114,31 @@ const WorkEXP = () => {
                 >
                   <Card>
                     <CardContent>
-                      <Box>
-                        <Stack
-                          direction="row"
-                          alignItems="center"
-                          justifyContent="flex-end"
-                        >
-                          <img
-                            height="55px"
-                            alt="QWR"
-                            src="https://media-exp1.licdn.com/dms/image/C510BAQECQ8lGqvb9eA/company-logo_200_200/0/1582547881312?e=1669248000&v=beta&t=AYze6YPgdMMRs8GRG4go1aUFw8Vg2MdR7KBaKefnYKM"
-                          />
-                          <Typography variant="h6" component="span">
+                      <Stack
+                        direction="row"
+                        alignItems="flex-start"
+                        justifyContent="flex-end"
+                      >
+                        <img
+                          height="55px"
+                          alt="QWR"
+                          src="https://media-exp1.licdn.com/dms/image/C510BAQECQ8lGqvb9eA/company-logo_200_200/0/1582547881312?e=1669248000&v=beta&t=AYze6YPgdMMRs8GRG4go1aUFw8Vg2MdR7KBaKefnYKM"
+                        />
+                        <Stack direction="column">
+                          <Typography variant="h6">
                             Question What's Real
                           </Typography>
+                          <Typography variant="subtitle1">
+                            Mumbai, MH, India
+                          </Typography>
+                          <Typography variant="subtitle2">
+                            WebDev Intern
+                          </Typography>
+                          <Typography variant="caption">
+                            Aug'20 - Oct'20
+                          </Typography>
                         </Stack>
-                      </Box>
+                      </Stack>
                       <Typography>...</Typography>
                     </CardContent>
                   </Card>
@@ -145,18 +161,25 @@ const WorkEXP = () => {
                 >
                   <Card>
                     <CardContent>
-                      <Box>
-                        <Stack direction="row" alignItems="center" gap={1.5}>
-                          <img
-                            height="55px"
-                            alt="ST"
-                            src="https://media-exp1.licdn.com/dms/image/C510BAQFaSjSKohnl-w/company-logo_200_200/0/1531927635737?e=1669248000&v=beta&t=WlToRaXDlZTcOY2xwQnoCIDx05OjbBP453mHIJV-Q5o"
-                          />
-                          <Typography variant="h6" component="span">
-                            Scantech
+                      <Stack direction="row" alignItems="flex-start" gap={1.5}>
+                        <img
+                          height="55px"
+                          alt="ST"
+                          src="https://media-exp1.licdn.com/dms/image/C510BAQFaSjSKohnl-w/company-logo_200_200/0/1531927635737?e=1669248000&v=beta&t=WlToRaXDlZTcOY2xwQnoCIDx05OjbBP453mHIJV-Q5o"
+                        />
+                        <Stack direction="column">
+                          <Typography variant="h6">Scantech Laser</Typography>
+                          <Typography variant="subtitle1">
+                            Mumbai, MH, India
+                          </Typography>
+                          <Typography variant="subtitle2">
+                            Software Engineering Intern
+                          </Typography>
+                          <Typography variant="caption">
+                            Jun'19 - Jul'19
                           </Typography>
                         </Stack>
-                      </Box>
+                      </Stack>
                       <Typography>...</Typography>
                     </CardContent>
                   </Card>

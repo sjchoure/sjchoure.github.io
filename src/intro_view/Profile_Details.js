@@ -14,7 +14,6 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-
 const ProfileDetails = () => {
   return (
     <Card disableGutters={true}>
@@ -60,7 +59,7 @@ const ProfileDetails = () => {
           </Grid>
           <Grid item p={2}>
             <Box mb={"0.1vh"} sx={{ fontWeight: 700, fontSize: "1.3rem" }}>
-              Intro
+              Intro 
             </Box>
             <Stack
               direction="row"
