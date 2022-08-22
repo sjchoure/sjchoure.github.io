@@ -8,13 +8,18 @@ import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import FastfoodIcon from "@mui/icons-material/Fastfood";
 import LaptopMacIcon from "@mui/icons-material/LaptopMac";
 import Typography from "@mui/material/Typography";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const WorkEXP = () => {
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.up("md"));
   return (
     <>
       <CssBaseline />
@@ -23,25 +28,19 @@ const WorkEXP = () => {
         disableGutters={true}
         sx={{ bgcolor: "#d9d9d9" }}
       >
-        <Box pl={3} pr={3} sx={{ bgcolor: "#E1E1E1" }}>
+        <Box sx={{ bgcolor: "#E1E1E1" }}>
           <Grid
             container
-            columnSpacing={2}
-            direction="row"
             alignItems="center"
+            justifyContent="center"
             style={{ minHeight: "100vh" }}
           >
-            <Grid item xs={12}>
-              <Timeline position="alternate">
+            <Grid item sm={12} md={10} lg={10} sx={{ width: "100vw" }}>
+              <Timeline
+                position={matches ? "alternate" : "right"}
+                sx={{ justifyContent: "center" }}
+              >
                 <TimelineItem>
-                  <TimelineOppositeContent
-                    sx={{ m: "auto 0" }}
-                    align="right"
-                    variant="body2"
-                    color="text.secondary"
-                  >
-                    May'22 - Aug'22
-                  </TimelineOppositeContent>
                   <TimelineSeparator>
                     <TimelineConnector />
                     <TimelineDot>
@@ -49,21 +48,20 @@ const WorkEXP = () => {
                     </TimelineDot>
                     <TimelineConnector />
                   </TimelineSeparator>
-                  <TimelineContent sx={{ py: "12px", px: 2 }}>
-                    <Typography variant="h6" component="span">
-                      Meta (Facebook)
-                    </Typography>
-                    <Typography>...</Typography>
+                  <TimelineContent
+                    sx={{ py: "12px", px: 2, flex: { lg: "1", md: "1", xs: "100%"} }}
+                  >
+                    <Card>
+                      <CardContent>
+                        <Typography variant="h6" component="span">
+                          Meta (Facebook)
+                        </Typography>
+                        <Typography>...</Typography>
+                      </CardContent>
+                    </Card>
                   </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
-                  <TimelineOppositeContent
-                    sx={{ m: "auto 0" }}
-                    variant="body2"
-                    color="text.secondary"
-                  >
-                    May'19 - Aug'19
-                  </TimelineOppositeContent>
                   <TimelineSeparator>
                     <TimelineConnector />
                     <TimelineDot color="primary">
@@ -71,11 +69,17 @@ const WorkEXP = () => {
                     </TimelineDot>
                     <TimelineConnector />
                   </TimelineSeparator>
-                  <TimelineContent sx={{ py: "12px", px: 2 }}>
-                    <Typography variant="h6" component="span">
-                      Question What's Real
-                    </Typography>
-                    <Typography>Because it&apos;s awesome!</Typography>
+                  <TimelineContent
+                    sx={{ py: "12px", px: 2, flex: { lg: "1", md: "1", xs: "100%"} }}
+                  >
+                    <Card>
+                      <CardContent>
+                        <Typography variant="h6" component="span">
+                          Meta (Facebook)
+                        </Typography>
+                        <Typography>...</Typography>
+                      </CardContent>
+                    </Card>
                   </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
@@ -86,9 +90,17 @@ const WorkEXP = () => {
                     </TimelineDot>
                     <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
                   </TimelineSeparator>
-                  <TimelineContent sx={{ py: "12px", px: 2 }}>
-                    <Typography variant="h6" component="span"></Typography>
-                    <Typography>...</Typography>
+                  <TimelineContent
+                    sx={{ py: "12px", px: 2, flex: { lg: "1", md: "1", xs: "100%"} }}
+                  >
+                    <Card>
+                      <CardContent>
+                        <Typography variant="h6" component="span">
+                          Meta (Facebook)
+                        </Typography>
+                        <Typography>...</Typography>
+                      </CardContent>
+                    </Card>
                   </TimelineContent>
                 </TimelineItem>
               </Timeline>

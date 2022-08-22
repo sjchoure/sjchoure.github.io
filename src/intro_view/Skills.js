@@ -11,13 +11,13 @@ const Skills = () => {
       <CardContent>
         <Grid container direction="column" justify="center" rowSpacing={2}>
           <Grid item>
-            <Box mb={"0.1vh"} sx={{ fontWeight: 700, fontSize: "1.3rem" }}>
+            <Box mb={"0.2vh"} sx={{ fontWeight: 700, fontSize: "1.3rem" }}>
               Skill Sets
             </Box>
-            <Box mb={"0.1vh"} sx={{ fontSize: "0.9rem" }}>
+            <Box mb={"0.2vh"} sx={{ fontSize: "0.9rem" }}>
               Programming Languages
             </Box>
-            <Stack direction="row" gap={1.5} sx={{ flexWrap: "wrap" }}>
+            <Stack mb={"0.2vh"} direction="row" gap={1.5} sx={{ flexWrap: "wrap" }}>
               <img
                 alt="C"
                 height="55px"
@@ -30,10 +30,11 @@ const Skills = () => {
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
               />
 
-
-            <img  alt="javascript"
-                height="55px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-          
+              <img
+                alt="javascript"
+                height="55px"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              />
 
               <img
                 alt="php"
@@ -70,12 +71,11 @@ const Skills = () => {
                 height="55px"
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
               />
-
             </Stack>
-            <Box mb={"0.1vh"} sx={{ fontSize: "0.9rem" }}>
+            <Box mb={"0.2vh"} sx={{ fontSize: "0.9rem" }}>
               Framework and Tools
             </Box>
-            <Stack direction="row" gap={1.5} sx={{ flexWrap: "wrap" }}>
+            <Stack mb={"0.2vh"} direction="row" gap={1.5} sx={{ flexWrap: "wrap" }}>
               <img
                 alt="react"
                 height="55px"
@@ -112,11 +112,11 @@ const Skills = () => {
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
               />
             </Stack>
-            <Box mb={"0.1vh"} sx={{ fontSize: "0.9rem" }}>
+            <Box mb={"0.2vh"} sx={{ fontSize: "0.9rem" }}>
               Cloud Platfdorm
             </Box>
 
-            <Stack direction="row" gap={1.5} sx={{ flexWrap: "wrap" }}>
+            <Stack mb={"0.2vh"} direction="row" gap={1.5} sx={{ flexWrap: "wrap" }}>
               <img
                 alt="aws"
                 height="55px"

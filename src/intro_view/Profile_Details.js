@@ -105,10 +105,10 @@ const ProfileDetails = () => {
               justifyContent="center"
               pt={2}
             >
-              <LinkedInIcon sx={{ fontSize: 35 , color: "#0072b1"}} />
-              <GitHubIcon sx={{ fontSize: 35 }} />
-              <FacebookIcon sx={{ fontSize: 35, color: "#3b5998" }} />
-              <TwitterIcon sx={{ fontSize: 35, color: "#1DA1F2" }} />
+              <LinkedInIcon sx={{ fontSize: 40 , color: "#0072b1"}} />
+              <GitHubIcon sx={{ fontSize: 40 }} />
+              <FacebookIcon sx={{ fontSize: 40, color: "#3b5998" }} />
+              <TwitterIcon sx={{ fontSize: 40, color: "#1DA1F2" }} />
             </Stack>
           </Grid>
         </Grid>
