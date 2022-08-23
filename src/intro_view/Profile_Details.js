@@ -33,7 +33,7 @@ const ProfileDetails = () => {
               alignItems: "center",
               justifyContent: "flex-end",
               background: "linear-gradient(0deg, rgba(50,50,50,0.9) 0%, rgba(217,217,217,0) 35%, rgba(255,255,255,0) 100%), url(https://i.pinimg.com/originals/10/83/da/1083da23b62f2b5e91f4be2bbd26f964.gif) bottom",
-              backgroundSize: "cover"
+              backgroundSize: "cover",
             }}
           >
             <Avatar
