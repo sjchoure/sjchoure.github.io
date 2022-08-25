@@ -21,7 +21,7 @@ const WorkEXP = () => {
   const matches = useMediaQuery(theme.breakpoints.up("md"));
   return (
     <Container maxWidth={false} disableGutters={true}>
-      <Box pb={1} sx={{ bgcolor: "#E1E1E1" }}>
+      <Box py={1} sx={{ bgcolor: "#E1E1E1" }}>
         <Grid
           direction="row"
           container
