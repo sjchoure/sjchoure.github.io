@@ -53,8 +53,8 @@ const ProfileDetails = () => {
                 borderRadius: "20px",
                 boxShadow: "0 4px 30px rgba(0, 0, 0, 0.4)",
                 backdropFilter: "blur(20px)",
+                textAlign: "center"
               }}
-              style={{}}
             >
               Sourabh Jaywant Choure
             </Box>
