@@ -16,7 +16,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 const ProfileDetails = () => {
   return (
-    <Card disableGutters={true}>
+    <Card>
       <CardContent sx={{ pl: 0, pr: 0 }}>
         <Grid container direction="column" justify="center" rowSpacing={2}>
           <Grid
