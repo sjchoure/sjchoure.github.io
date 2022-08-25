@@ -15,6 +15,7 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import CorporateFareIcon from "@mui/icons-material/CorporateFare";
 import Stack from "@mui/material/Stack";
+import List from "@mui/material/List";
 
 const WorkEXP = () => {
   const theme = useTheme();
@@ -92,10 +93,9 @@ const WorkEXP = () => {
                             variant="body2"
                             sx={{ textAlign: "justify" }}
                           >
-                            <ul
-                              style={{
+                            <List
+                              sx={{
                                 "list-style": "disc",
-                                padding: "0px 0px 0px 12px",
                               }}
                             >
                               <li>
@@ -134,7 +134,7 @@ const WorkEXP = () => {
                                 not. Thus, contributing to the team's roadmap of
                                 rolling it out ahead of time.
                               </li>
-                            </ul>
+                            </List>
                           </Typography>
                         </Stack>
                       </Stack>
