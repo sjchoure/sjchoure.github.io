@@ -40,15 +40,12 @@ const WorkEXP = () => {
             sm={12}
             md={10}
             lg={10}
-            sx={{
-              width: "100vw",
-            }}
           >
             <Box mb={"0.1vh"} sx={{ fontWeight: 700, fontSize: "1.3rem" }}>
               Work Experience
             </Box>
           </Grid>
-          <Grid item sm={12} md={10} lg={10} sx={{ width: "100vw" }}>
+          <Grid item sm={12} md={10} lg={10}>
             <Timeline
               position={matches ? "alternate" : "right"}
               sx={{ justifyContent: "center" }}
