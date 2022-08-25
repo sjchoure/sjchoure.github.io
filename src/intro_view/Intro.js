@@ -2,7 +2,6 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
-
 import ProfileDetails from "././Profile_Details";
 import AboutMe from "./About_Me";
 import Skills from "./Skills";
@@ -18,7 +17,13 @@ const Intro = () => {
           alignItems="center"
           style={{ minHeight: "100vh" }}
         >
-          <Grid item xs={12} sm={4} md={4} sx={{ padding: { xs: "16px 0px", md: "0px" } }}>
+          <Grid
+            item
+            xs={12}
+            sm={4}
+            md={4}
+            sx={{ padding: { xs: "16px 0px", md: "0px" } }}
+          >
             <ProfileDetails />
           </Grid>
           <Grid item xs={12} sm={8}>
