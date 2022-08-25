@@ -96,9 +96,9 @@ const WorkEXP = () => {
                               listStyle: "disc",
                               padding: {
                                 xs: "0px",
-                                md: "0px 0px 0px 16px"
+                                md: "0px 0px 0px 16px",
                               },
-                              textAlign:"justify"
+                              textAlign: "justify",
                             }}
                           >
                             <li>
