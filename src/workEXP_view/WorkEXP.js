@@ -88,31 +88,56 @@ const WorkEXP = () => {
                           <Typography variant="caption">
                             May'22 - Aug'22
                           </Typography>
+                          <Typography
+                            variant="body2"
+                            sx={{ textAlign: "justify" }}
+                          >
+                            <ul
+                              style={{
+                                "list-style": "disc",
+                                padding: "0px 0px 0px 12px",
+                              }}
+                            >
+                              <li>
+                                The Ads (Responsibility and Privacy) team needed
+                                a long-term solution to filter out specific ads
+                                based on the restricted category data defined by
+                                the user's jurisdiction. Hence, leading to the
+                                creation of an internal tool, Policy Management
+                                Tool. Policy Management Tool helped solve this
+                                problem in multiple ways. Engineers from various
+                                cross functional teams were efficiently able to
+                                collaborate due to this tool.
+                              </li>
+                              <li>
+                                Developed and designed from scratch policy
+                                production control workflow for the Policy
+                                Management Tool. It included views to display
+                                entities like policies, models, document types,
+                                with the ability to mutate them. Additionally,
+                                to make the view more informative a live
+                                visualization of policy status changes with
+                                timestamps and by whom details were displayed
+                                using Gantt chart. Shipped all those features
+                                with unit test both in frontend and backend.
+                              </li>
+                              <li>
+                                Created continuous Integration/deployment
+                                framework to validate configuration file changes
+                                upon mutation.
+                              </li>
+                              <li>
+                                Handled implementing features in
+                                Enforcement/Annotation API to collect user
+                                impressions from all Facebook apps and log the
+                                results for each policy if it's sensitive or
+                                not. Thus, contributing to the team's roadmap of
+                                rolling it out ahead of time.
+                              </li>
+                            </ul>
+                          </Typography>
                         </Stack>
                       </Stack>
-                      <ul>
-                        <li>
-                          The Ads (Responsibility and Privacy) team needed a
-                          long-term solution to filter out specific ads based on
-                          the restricted category data defined by the user’s
-                          jurisdiction. Hence, leading to the creation of an
-                          internal tool, Policy Management Tool. Policy
-                          Management Tool helped solve this problem in multiple
-                          ways. Engineers from various cross functional teams
-                          were efficiently able to collaborate due to this tool.
-                        </li>
-                        <li>
-                          Developed and designed from scratch policy production
-                          control workflow for the Policy Management Tool. It
-                          included views to display entities like policies,
-                          models, document types, with the ability to mutate
-                          them. Additionally, to make the view more informative
-                          a live visualization of policy status changes with
-                          timestamps and by whom details were displayed using
-                          Gantt chart. Shipped all those features with unit test
-                          both in frontend and backend.
-                        </li>
-                      </ul>
                     </CardContent>
                   </Card>
                 </TimelineContent>
