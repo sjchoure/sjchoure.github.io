@@ -16,7 +16,6 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import CorporateFareIcon from "@mui/icons-material/CorporateFare";
 import Stack from "@mui/material/Stack";
 import List from "@mui/material/List";
-import "./WorkEXP.css";
 
 const WorkEXP = () => {
   const theme = useTheme();
