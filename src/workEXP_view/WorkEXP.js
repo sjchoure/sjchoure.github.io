@@ -90,7 +90,29 @@ const WorkEXP = () => {
                           </Typography>
                         </Stack>
                       </Stack>
-                      <Typography>...</Typography>
+                      <ul>
+                        <li>
+                          The Ads (Responsibility and Privacy) team needed a
+                          long-term solution to filter out specific ads based on
+                          the restricted category data defined by the user’s
+                          jurisdiction. Hence, leading to the creation of an
+                          internal tool, Policy Management Tool. Policy
+                          Management Tool helped solve this problem in multiple
+                          ways. Engineers from various cross functional teams
+                          were efficiently able to collaborate due to this tool.
+                        </li>
+                        <li>
+                          Developed and designed from scratch policy production
+                          control workflow for the Policy Management Tool. It
+                          included views to display entities like policies,
+                          models, document types, with the ability to mutate
+                          them. Additionally, to make the view more informative
+                          a live visualization of policy status changes with
+                          timestamps and by whom details were displayed using
+                          Gantt chart. Shipped all those features with unit test
+                          both in frontend and backend.
+                        </li>
+                      </ul>
                     </CardContent>
                   </Card>
                 </TimelineContent>
