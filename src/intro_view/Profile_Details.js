@@ -53,7 +53,10 @@ const ProfileDetails = () => {
               sx={{
                 fontFamily: "Geneva, Verdana, sans-serif",
                 color: "white",
-                fontSize: "1.5rem",
+                fontSize: {
+                  sm: "1.2rem",
+                  md: "1.5rem",
+                },
                 background: "rgba(150, 150, 150, 0.2)",
                 borderRadius: "20px",
                 boxShadow: "0 4px 30px rgba(0, 0, 0, 0.4)",
