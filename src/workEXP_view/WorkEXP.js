@@ -89,7 +89,6 @@ const WorkEXP = () => {
                           <Typography variant="caption">
                             May'22 - Aug'22
                           </Typography>
-
                           <List
                             sx={{
                               listStyle: "disc",
