@@ -32,12 +32,17 @@ const ProfileDetails = () => {
               flexDirection: "column",
               alignItems: "center",
               justifyContent: "flex-end",
-              background: "linear-gradient(0deg, rgba(50,50,50,0.9) 0%, rgba(217,217,217,0) 35%, rgba(255,255,255,0) 100%), url(https://i.pinimg.com/originals/10/83/da/1083da23b62f2b5e91f4be2bbd26f964.gif) bottom",
+              background:
+                "linear-gradient(0deg, rgba(50,50,50,0.9) 0%, rgba(217,217,217,0) 35%, rgba(255,255,255,0) 100%), url(https://i.pinimg.com/originals/10/83/da/1083da23b62f2b5e91f4be2bbd26f964.gif) bottom",
               backgroundSize: "cover",
             }}
           >
             <Avatar
-              sx={{ width: "15vh", height: "15vh", border: "0.3vh solid white" }}
+              sx={{
+                width: "15vh",
+                height: "15vh",
+                border: "0.3vh solid white",
+              }}
               src="https://media-exp1.licdn.com/dms/image/C5603AQHJ24HyS5z4uQ/profile-displayphoto-shrink_400_400/0/1653200103453?e=1666828800&v=beta&t=-HsJbbE2zpA5u6rYW_RCwwHN04oKCUSNLWisGYOqq38"
             />
             <Box
@@ -53,7 +58,7 @@ const ProfileDetails = () => {
                 borderRadius: "20px",
                 boxShadow: "0 4px 30px rgba(0, 0, 0, 0.4)",
                 backdropFilter: "blur(20px)",
-                textAlign: "center"
+                textAlign: "center",
               }}
             >
               Sourabh Jaywant Choure

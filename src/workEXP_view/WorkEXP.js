@@ -20,10 +20,7 @@ const WorkEXP = () => {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("md"));
   return (
-    <Container
-      maxWidth={false}
-      disableGutters={true}
-    >
+    <Container maxWidth={false} disableGutters={true}>
       <Box pb={1} sx={{ bgcolor: "#E1E1E1" }}>
         <Grid
           direction="row"
@@ -79,7 +76,9 @@ const WorkEXP = () => {
                           src="https://media-exp1.licdn.com/dms/image/C4E0BAQFdNatYGiBelg/company-logo_200_200/0/1636138753911?e=1669248000&v=beta&t=fstPmR_75BbPANOk8bhCYLZDiPTZxNyXhbL6HQ8XqHE"
                         />
                         <Stack direction="column">
-                          <Typography variant="h6"><strong>Meta (Facebook)</strong></Typography>
+                          <Typography variant="h6">
+                            <strong>Meta (Facebook)</strong>
+                          </Typography>
                           <Typography variant="subtitle1">
                             Menlo Park, CA, US
                           </Typography>
@@ -116,7 +115,12 @@ const WorkEXP = () => {
                       <Stack
                         direction="row"
                         alignItems="flex-start"
-                        justifyContent="flex-end"
+                        sx={{
+                          justifyContent: {
+                            xs: "flex-start",
+                            md: "flex-end",
+                          },
+                        }}
                       >
                         <img
                           height="55px"
@@ -167,7 +171,9 @@ const WorkEXP = () => {
                           src="https://media-exp1.licdn.com/dms/image/C510BAQFaSjSKohnl-w/company-logo_200_200/0/1531927635737?e=1669248000&v=beta&t=WlToRaXDlZTcOY2xwQnoCIDx05OjbBP453mHIJV-Q5o"
                         />
                         <Stack direction="column">
-                          <Typography variant="h6"><strong>Scantech Laser</strong></Typography>
+                          <Typography variant="h6">
+                            <strong>Scantech Laser</strong>
+                          </Typography>
                           <Typography variant="subtitle1">
                             Mumbai, MH, India
                           </Typography>
