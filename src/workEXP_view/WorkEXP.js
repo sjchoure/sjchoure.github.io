@@ -90,16 +90,19 @@ const WorkEXP = () => {
                           <Typography variant="caption">
                             May'22 - Aug'22
                           </Typography>
-                          <Typography
-                            variant="body2"
-                            sx={{ textAlign: "justify" }}
+
+                          <List
+                            sx={{
+                              listStyle: "disc",
+                              padding: {
+                                xs: "0px",
+                                md: "0px 0px 0px 16px"
+                              },
+                              textAlign:"justify"
+                            }}
                           >
-                            <List
-                              sx={{
-                                listStyle: "disc",
-                              }}
-                            >
-                              <li>
+                            <li>
+                              <Typography variant="body2">
                                 The Ads (Responsibility and Privacy) team needed
                                 a long-term solution to filter out specific ads
                                 based on the restricted category data defined by
@@ -109,8 +112,10 @@ const WorkEXP = () => {
                                 problem in multiple ways. Engineers from various
                                 cross functional teams were efficiently able to
                                 collaborate due to this tool.
-                              </li>
-                              <li>
+                              </Typography>
+                            </li>
+                            <li>
+                              <Typography variant="body2">
                                 Developed and designed from scratch policy
                                 production control workflow for the Policy
                                 Management Tool. It included views to display
@@ -121,22 +126,26 @@ const WorkEXP = () => {
                                 timestamps and by whom details were displayed
                                 using Gantt chart. Shipped all those features
                                 with unit test both in frontend and backend.
-                              </li>
-                              <li>
+                              </Typography>
+                            </li>
+                            <li>
+                              <Typography variant="body2">
                                 Created continuous Integration/deployment
                                 framework to validate configuration file changes
                                 upon mutation.
-                              </li>
-                              <li>
+                              </Typography>
+                            </li>
+                            <li>
+                              <Typography variant="body2">
                                 Handled implementing features in
                                 Enforcement/Annotation API to collect user
                                 impressions from all Facebook apps and log the
                                 results for each policy if it's sensitive or
                                 not. Thus, contributing to the team's roadmap of
                                 rolling it out ahead of time.
-                              </li>
-                            </List>
-                          </Typography>
+                              </Typography>
+                            </li>
+                          </List>
                         </Stack>
                       </Stack>
                     </CardContent>
