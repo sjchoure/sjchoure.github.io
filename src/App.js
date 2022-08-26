@@ -214,7 +214,9 @@ function App() {
               >
                 Menu
               </Typography>
+              
             </StyledBox>
+            <Divider/>
           </SwipeableDrawer>
         </>
       )}
