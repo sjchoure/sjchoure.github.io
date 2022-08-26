@@ -11,6 +11,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Drawer from "@mui/material/Drawer";
 import { styled, useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import ViewSidebarRoundedIcon from "@mui/icons-material/ViewSidebarRounded";
 
 const drawerWidth = 240;
 
@@ -30,7 +31,7 @@ const closedMixin = (theme) => ({
   }),
   overflowX: "hidden",
   width: `calc(${theme.spacing(7)} + 1px)`,
-  [theme.breakpoints.up("sm")]: {
+  [theme.breakpoints.up("md")]: {
     width: `calc(${theme.spacing(8)} + 1px)`,
   },
 });
@@ -67,7 +68,18 @@ function AlertBox() {
 
   const [openAlert, setOpenAlert] = React.useState(true);
   return (
-    <Box sx={{ position: "absolute", width: "100%" }} p={0}>
+    <Box
+      sx={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        [theme.breakpoints.up("md")]: {
+          left: `calc(${theme.spacing(8)} + 1px)`,
+        },
+        right: 0,
+      }}
+      p={0}
+    >
       <Collapse in={openAlert}>
         <Alert
           severity="info"
@@ -99,13 +111,27 @@ function App() {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      {/* {matches ? (
+      {matches ? (
         <MiniDrawer variant="permanent" open={open}>
-          hi
+          <Box
+            sx={{
+              display: "flex",
+              direction: "column",
+              alignItems: "flex-end",
+              justifyContent: "center",
+              height: "100%",
+            }}
+          >
+            <Box>
+              <ViewSidebarRoundedIcon
+                sx={{ fontSize: "2rem", color: "#707070" }}
+              />
+            </Box>
+          </Box>
         </MiniDrawer>
       ) : (
         <></>
-      )} */}
+      )}
       <Box flexGrow={1}>
         <AlertBox />
         <Intro />
