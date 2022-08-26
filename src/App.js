@@ -13,6 +13,7 @@ import { styled, useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import ViewSidebarOutlinedIcon from "@mui/icons-material/ViewSidebarOutlined";
 import Divider from "@mui/material/Divider";
+import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 
 const drawerWidth = 240;
 
@@ -31,7 +32,7 @@ const closedMixin = (theme) => ({
     duration: theme.transitions.duration.leavingScreen,
   }),
   overflowX: "hidden",
-  width: "64px",
+  width: "65px",
 });
 
 const DrawerHeader = styled("div")(({ theme }) => ({
@@ -72,7 +73,7 @@ function AlertBox() {
         top: 0,
         left: 0,
         [theme.breakpoints.up("md")]: {
-          left: `calc(${theme.spacing(8)} + 1px)`,
+          left: "65px",
         },
         right: 0,
       }}
@@ -116,17 +117,27 @@ function App() {
               display: "flex",
               direction: "column",
               alignItems: "flex-start",
-              PaddingLeft: "14px",
+              justifyContent: open ? "initial" : "center",
+              px: 2,
               flexGrow: 1,
             }}
-          ></Box>
+          >
+            <Box sx={{ mr: open ? 2 : "auto" }} pt={1}>
+              <LanguageOutlinedIcon
+                sx={{
+                  fontSize: "2rem",
+                }}
+              />
+            </Box>
+          </Box>
           <Divider />
           <Box
             sx={{
               display: "flex",
               direction: "column",
               alignItems: "flex-end",
-              paddingLeft: "14px",
+              justifyContent: open ? "initial" : "center",
+              px: 2,
             }}
           >
             <ViewSidebarOutlinedIcon
@@ -137,6 +148,7 @@ function App() {
                 fontSize: "2rem",
                 color: "#707070",
                 transform: "rotate(180deg)",
+                mr: open ? 2 : "auto",
               }}
             />
           </Box>
