@@ -11,7 +11,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Drawer from "@mui/material/Drawer";
 import { styled, useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import ViewSidebarRoundedIcon from "@mui/icons-material/ViewSidebarRounded";
+import ViewSidebarOutlinedIcon from "@mui/icons-material/ViewSidebarOutlined";
 import Divider from "@mui/material/Divider";
 
 const drawerWidth = 240;
@@ -117,24 +117,27 @@ function App() {
               direction: "column",
               alignItems: "flex-start",
               PaddingLeft: "14px",
-              flexGrow: 1
+              flexGrow: 1,
             }}
-          >
-          </Box>
-          <Divider/>
+          ></Box>
+          <Divider />
           <Box
             sx={{
               display: "flex",
               direction: "column",
               alignItems: "flex-end",
-              paddingLeft: "14px"
+              paddingLeft: "14px",
             }}
           >
-            <ViewSidebarRoundedIcon
+            <ViewSidebarOutlinedIcon
               onClick={() => {
                 setOpen(!open);
               }}
-              sx={{ fontSize: "2rem", color: "#707070" }}
+              sx={{
+                fontSize: "2rem",
+                color: "#707070",
+                transform: "rotate(180deg)",
+              }}
             />
           </Box>
         </MiniDrawer>
