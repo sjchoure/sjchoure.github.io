@@ -12,6 +12,7 @@ import Drawer from "@mui/material/Drawer";
 import { styled, useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import ViewSidebarRoundedIcon from "@mui/icons-material/ViewSidebarRounded";
+import Divider from "@mui/material/Divider";
 
 const drawerWidth = 240;
 
@@ -30,10 +31,7 @@ const closedMixin = (theme) => ({
     duration: theme.transitions.duration.leavingScreen,
   }),
   overflowX: "hidden",
-  width: `calc(${theme.spacing(7)} + 1px)`,
-  [theme.breakpoints.up("md")]: {
-    width: `calc(${theme.spacing(8)} + 1px)`,
-  },
+  width: "64px",
 });
 
 const DrawerHeader = styled("div")(({ theme }) => ({
@@ -117,16 +115,27 @@ function App() {
             sx={{
               display: "flex",
               direction: "column",
-              alignItems: "flex-end",
-              justifyContent: "center",
-              height: "100%",
+              alignItems: "flex-start",
+              PaddingLeft: "14px",
+              flexGrow: 1
             }}
           >
-            <Box>
-              <ViewSidebarRoundedIcon
-                sx={{ fontSize: "2rem", color: "#707070" }}
-              />
-            </Box>
+          </Box>
+          <Divider/>
+          <Box
+            sx={{
+              display: "flex",
+              direction: "column",
+              alignItems: "flex-end",
+              paddingLeft: "14px"
+            }}
+          >
+            <ViewSidebarRoundedIcon
+              onClick={() => {
+                setOpen(!open);
+              }}
+              sx={{ fontSize: "2rem", color: "#707070" }}
+            />
           </Box>
         </MiniDrawer>
       ) : (
