@@ -201,8 +201,8 @@ function App() {
               sx={{
                 position: "absolute",
                 top: -drawerBleeding,
-                borderTopLeftRadius: 8,
-                borderTopRightRadius: 8,
+                borderTopLeftRadius: 20,
+                borderTopRightRadius: 20,
                 visibility: "visible",
                 right: 0,
                 left: 0,
@@ -214,9 +214,8 @@ function App() {
               >
                 Menu
               </Typography>
-              
             </StyledBox>
-            <Divider/>
+            <Divider />
           </SwipeableDrawer>
         </>
       )}
