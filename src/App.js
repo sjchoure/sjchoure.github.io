@@ -14,8 +14,13 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import ViewSidebarOutlinedIcon from "@mui/icons-material/ViewSidebarOutlined";
 import Divider from "@mui/material/Divider";
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
+import SwipeableDrawer from "@mui/material/SwipeableDrawer";
+import { grey } from "@mui/material/colors";
+import Typography from "@mui/material/Typography";
+import { Global } from "@emotion/react";
 
 const drawerWidth = 240;
+const drawerBleeding = 56;
 
 const openedMixin = (theme) => ({
   width: drawerWidth,
@@ -59,6 +64,20 @@ const MiniDrawer = styled(Drawer, {
     ...closedMixin(theme),
     "& .MuiDrawer-paper": closedMixin(theme),
   }),
+}));
+
+const StyledBox = styled(Box)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === "light" ? "#fff" : grey[800],
+}));
+
+const Puller = styled(Box)(({ theme }) => ({
+  width: 30,
+  height: 6,
+  backgroundColor: theme.palette.mode === "light" ? grey[300] : grey[900],
+  borderRadius: 3,
+  position: "absolute",
+  top: 8,
+  left: "calc(50% - 15px)",
 }));
 
 function AlertBox() {
@@ -154,7 +173,50 @@ function App() {
           </Box>
         </MiniDrawer>
       ) : (
-        <></>
+        <>
+          <Global
+            styles={{
+              ".MuiDrawer-root > .MuiPaper-root": {
+                height: `calc(50% - ${drawerBleeding}px)`,
+                overflow: "visible",
+              },
+            }}
+          />
+          <SwipeableDrawer
+            anchor="bottom"
+            swipeAreaWidth={drawerBleeding}
+            onClose={() => {
+              setOpen(false);
+            }}
+            onOpen={() => {
+              setOpen(true);
+            }}
+            disableSwipeToOpen={false}
+            open={open}
+            ModalProps={{
+              keepMounted: true,
+            }}
+          >
+            <StyledBox
+              sx={{
+                position: "absolute",
+                top: -drawerBleeding,
+                borderTopLeftRadius: 8,
+                borderTopRightRadius: 8,
+                visibility: "visible",
+                right: 0,
+                left: 0,
+              }}
+            >
+              <Puller />
+              <Typography
+                sx={{ p: 2, textAlign: "center", color: "text.secondary" }}
+              >
+                Menu
+              </Typography>
+            </StyledBox>
+          </SwipeableDrawer>
+        </>
       )}
       <Box flexGrow={1}>
         <AlertBox />
