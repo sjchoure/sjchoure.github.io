@@ -71,7 +71,7 @@ const WorkEXP = () => {
                         <img
                           height="55px"
                           alt="QWR"
-                          src="https://media-exp1.licdn.com/dms/image/C4E0BAQFdNatYGiBelg/company-logo_200_200/0/1636138753911?e=1669248000&v=beta&t=fstPmR_75BbPANOk8bhCYLZDiPTZxNyXhbL6HQ8XqHE"
+                          src="/metaPic.jpeg"
                         />
                         <Stack direction="column">
                           <Typography variant="h6">
@@ -177,7 +177,7 @@ const WorkEXP = () => {
                         <img
                           height="55px"
                           alt="QWR"
-                          src="https://media-exp1.licdn.com/dms/image/C510BAQECQ8lGqvb9eA/company-logo_200_200/0/1582547881312?e=1669248000&v=beta&t=AYze6YPgdMMRs8GRG4go1aUFw8Vg2MdR7KBaKefnYKM"
+                          src="/qwrPic.jpeg"
                         />
                         <Stack direction="column">
                           <Typography variant="h6">
@@ -220,7 +220,7 @@ const WorkEXP = () => {
                         <img
                           height="55px"
                           alt="ST"
-                          src="https://media-exp1.licdn.com/dms/image/C510BAQFaSjSKohnl-w/company-logo_200_200/0/1531927635737?e=1669248000&v=beta&t=WlToRaXDlZTcOY2xwQnoCIDx05OjbBP453mHIJV-Q5o"
+                          src="/stPic.jpeg"
                         />
                         <Stack direction="column">
                           <Typography variant="h6">

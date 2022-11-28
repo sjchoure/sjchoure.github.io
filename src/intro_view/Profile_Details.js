@@ -43,7 +43,7 @@ const ProfileDetails = () => {
                 height: "15vh",
                 border: "0.3vh solid white",
               }}
-              src="https://media-exp1.licdn.com/dms/image/C5603AQHJ24HyS5z4uQ/profile-displayphoto-shrink_400_400/0/1653200103453?e=1666828800&v=beta&t=-HsJbbE2zpA5u6rYW_RCwwHN04oKCUSNLWisGYOqq38"
+              src="/mePic.jpeg"
             />
             <Box
               mt={1}
